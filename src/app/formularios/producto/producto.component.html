@@ -1,0 +1,77 @@
+
+<h1>creacion de procudtos <small> a partir del dormulario</small></h1>
+
+<h1>Formularios</h1> <small>template</small>
+<hr>
+<form autocomplete="off" [formGroup]="productoForm" (ngSubmit)="guardar()">
+    <div>
+        <div class="form-group row">
+            <label class="col-2">codigo</label>
+            <div class="col-8">
+                <input 
+                class="form-control"
+                type="text" 
+                class="form-control" 
+                placeholder="escribe el codigo del producto" 
+                formControlName="codigo"
+               >
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2">nombre</label>
+            <div class="col-8">
+                <input 
+                class="form-control"
+                type="text" 
+                class="form-control" 
+                placeholder="escribe tu nombre" 
+                formControlName="nombre"
+                >
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2">precio</label>
+            <div class="col-8">
+                <input 
+                class="form-control"
+                type="text" 
+                class="form-control" 
+                placeholder="escribe tu nombre" 
+                formControlName="precio"
+                >
+            </div>
+            <!-- [class.is-invalid]="precioInvalido" -->
+        </div>
+        <div class="form-group row">
+            <label class="col-2">descripcion</label>
+            <div class="col-8">
+                <input 
+                class="form-control"
+                type="text" 
+                class="form-control" 
+                placeholder="ingrese la descripcion del prodcuto" 
+                formControlName="descripcion" >
+                
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2">imagen</label>
+            <div class="col-8">
+                <input 
+                class="form-control"
+                type="text" 
+                class="form-control" 
+                placeholder="ingrese la ulr de la imagen" 
+                formControlName="imagen" >
+            </div>
+        </div>
+        <div class="form-group row">
+            <button 
+            type="submit"
+            class="btn btn-outline-primary btn-block">
+                guardar
+            </button>
+        </div>
+    </div>
+
+</form>

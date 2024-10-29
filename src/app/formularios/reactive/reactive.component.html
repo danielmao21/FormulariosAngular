@@ -1,0 +1,20 @@
+
+<h1>Formulario <small>Reactive</small></h1>
+<hr>
+<form  autocomplete="off"[formGroup]="formulario" (ngSubmit)="guardar()">
+    <div>
+        <div class="forms-group row">
+            <label for="col-2">nombre</label>
+            <div class="col-8">
+                <input class="form-control"
+                 type="text"
+                 placeholder="escribe tu nombre">
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <button type="sumbit" class="btn btn-primary">
+            Guardar
+        </button>
+    </div>
+</form>

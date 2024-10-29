@@ -1,0 +1,9 @@
+
+export class ProductoModule{
+
+    codigo:string;
+    precio:number;
+    descripcion:string;
+    nombre:string;
+    foto:string;
+}
